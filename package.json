@@ -1,0 +1,30 @@
+{
+  "name": "varstr",
+  "version": "0.1.0",
+  "description": "Variable fixed width parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nicktho/varstr"
+  },
+  "keywords": [
+    "variable",
+    "fixed",
+    "width",
+    "parser",
+    "file"
+  ],
+  "author": "Nick Matenaar <matenaar92@gmail.com> (http://nickmatenaar.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicktho/varstr/issues"
+  },
+  "homepage": "https://github.com/Nicktho/varstr",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  }
+}
