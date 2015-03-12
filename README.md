@@ -4,7 +4,7 @@ Variable width parser.
 ##**To use:**
 
 + Define a transformer with a variable delimiter (in this case, '~')
-```
+```javascript
 var vs = require('varstr');
 var transformer = vs('~', [
   vs.str('foo'),
@@ -14,7 +14,7 @@ var transformer = vs('~', [
 ```
 
 + Objectifiy or Stringify as needed
-```
+```javascript
 transformer.objectify('F~Bar~3');
 // => { foo: 'F', bar: 'Bar', baz: 3}
 
