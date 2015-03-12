@@ -1,7 +1,7 @@
 # varstr
 Variable width parser.
 
-##**To use:**
+##To use:
 
 + Define a transformer with a variable delimiter (in this case, '~')
 ```javascript
