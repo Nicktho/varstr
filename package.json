@@ -1,6 +1,6 @@
 {
   "name": "varstr",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Variable fixed width parser",
   "main": "index.js",
   "scripts": {
