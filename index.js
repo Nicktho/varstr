@@ -11,9 +11,11 @@ var varstr = module.exports = function (sep, objDef) {
       }, {});
     },
     stringify: function (obj) {
-      return objDef.reduce(function (str, field) {
+      var str = objDef.reduce(function (str, field) {
         return str + field.toVarString(sep, obj[field.name]);
       }, '');
+      var reg = new RegExp(sep + "\\s*$", "g");
+      return str.replace(reg, "");
     }
   };
 };
@@ -34,7 +36,7 @@ varstr.number = function (name, size) {
     name: name,
     parse: Number,
     toVarString: function (sep, value) {
-      return value && value.toString ? value.toString() : '0';
+      return (value && value.toString ? value.toString() : '0') + sep;
     }
   };
 };
